@@ -1,0 +1,219 @@
+.container {
+  width: 100vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+  height: auto;
+}
+
+section {
+  position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Typography */
+@font-face {
+  font-family: "FiraSansLight";
+  src: url("../fonts/FiraSans-Light.ttf") ;
+}
+@font-face {
+  font-family: "FiraSansMed";
+  src: url("../fonts/FiraSans-Medium.ttf") ;
+}
+@font-face {
+  font-family: "FiraSansReg";
+  src: url("../fonts/FiraSans-Regular.ttf") ;
+}
+
+@font-face {
+  font-family: "FiraSansLrg";
+  src: url("../fonts/FiraSans-SemiBold.ttf") ;
+}
+/* For Headers/Titles */
+h1 {
+  font-family: "FiraSansMed";
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%);
+  white-space: nowrap;
+}
+
+/* For Subheaders */
+h2 {
+  font-family:"FiraSansMed";
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(
+    -50%
+  ); /* translateX only moves the object horizontally */
+  top: 32px;
+}
+
+/* For Captions */
+h4 {
+  font-family:"FiraSansReg";
+  font-size: 1em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+}
+p{
+  font-family:"FiraSansReg";
+}
+
+/* Navigation Bar */
+.navigation {
+  width: 100vw;
+  height: 40px;
+  background: rgb(23, 2, 41);
+  position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+  z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+
+ul {
+  font-family:"FiraSansReg";
+  list-style: none; /* this removes bullet points on our "list" */
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.3em;
+}
+
+li {
+  float: right; /* makes all of our links on the right side of the nav bar */
+  margin-right: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* removes the underline and blue color of our text links */
+}
+
+li:last-child {
+  /* last-child only targets the last item on our list, which is our home page link */
+  float: left; /* make sure that the home page link is on the left of the page, not the right */
+  margin-left: 0px;
+}
+
+/* Home Page CSS */
+
+.home {
+  /* this is the hero image area */
+  width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
+  height: 250vh; /* same idea but for the vertical height of the web browser */
+  background: rgba(95, 40, 147, 0.548);
+}
+.cover {
+
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/MAGE.jpg");
+  background-size: cover;
+}
+
+.containerHome {
+  color: white;
+  text-align: left;
+}
+.bannerHome {
+  font-family:"FiraSansReg";
+  width: 100vw;
+  height: 45px;
+  background: rgb(204, 0, 255);
+  position: absolute;
+  top: 430px;
+  text-align: center;
+  font-size: 40px;
+}
+.header1Home {
+  position: absolute;
+  top: 650px;
+  text-align: left;
+  width: 400px;
+  left: 800px;
+  margin: auto;
+}
+.image1Home {
+  width: 310px;
+  height: 320px;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, 30%);
+  background: url("../images/image1.jpg");
+  background-size: cover;
+}
+
+.textHome {
+  
+  position: absolute;
+  top: 700px;
+  text-align: left;
+  width: 450px;
+  left: 600px;
+  margin: auto;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+
+.header2Home {
+  position: absolute;
+  top: 1050px;
+}
+
+
+#guests{
+  position: relative;
+  top: 300px;
+  text-align:center;
+  margin:10px auto; 
+  font-family:"FiraSansLight";
+}
+#guests a{
+  margin:0px 20px;
+  display:inline-block;
+  text-decoration:none;
+  color:rgb(255, 255, 255);
+}
+
+.one {
+  width: 1000px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+  height: 100vh;
+  background: rgba(202, 150, 38, 0.548);
+  margin: auto; /* makes sure that the section is centered on the page */
+}
+
+.two {
+  width: 1000px;
+  height: 100vh;
+  background: green;
+  margin: auto;
+}
+
+.three {
+  width: 1000px;
+  height: 600px;
+  background: orange;
+  margin: auto;
+}
+
+.four {
+  width: 1000px;
+  height: 300px;
+  background: violet;
+  margin: auto;
+}
+.five {
+  width: 1000px;
+  height: 300px;
+  background: violet;
+  margin: auto;
+}
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  background: black;
+}
