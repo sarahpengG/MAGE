@@ -9,6 +9,10 @@ section {
 
 /* Typography */
 @font-face {
+  font-family: "FiraSansLight";
+  src: url("../fonts/FiraSans-Light.ttf") ;
+}
+@font-face {
   font-family: "FiraSansMed";
   src: url("../fonts/FiraSans-Medium.ttf") ;
 }
@@ -100,13 +104,14 @@ li:last-child {
   /* this is the hero image area */
   width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
   height: 250vh; /* same idea but for the vertical height of the web browser */
-  background: rgba(93, 53, 131, 0.548);
+  background: rgba(95, 40, 147, 0.548);
 }
 .cover {
 
   width: 100vw;
   height: 100vh;
-  background: rgba(47, 15, 77, 0.548);
+  background: url("../images/MAGE.jpg");
+  background-size: cover;
 }
 
 .containerHome {
@@ -156,6 +161,21 @@ li:last-child {
 .header2Home {
   position: absolute;
   top: 1050px;
+}
+
+
+#guests{
+  position: relative;
+  top: 300px;
+  text-align:center;
+  margin:10px auto; 
+  font-family:"FiraSansLight";
+}
+#guests a{
+  margin:0px 20px;
+  display:inline-block;
+  text-decoration:none;
+  color:rgb(255, 255, 255);
 }
 
 .one {

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>M.A.G.E</title>
-  </head>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <!-- It is almost always a good idea to have a large div wrap out the entire contents of your html body. In this example, that div is "container" This will make placement of other HTML elements easier. -->
-    <div class="container">
-      <!-- Navigation Bar  -->
+  <title>M.A.G.E</title>
+</head>
 
-      <!-- In order to build our nav bar, use lists. <ul> is basically the container of the list and <li> is a single element in the list.
+<body>
+  <!-- It is almost always a good idea to have a large div wrap out the entire contents of your html body. In this example, that div is "container" This will make placement of other HTML elements easier. -->
+  <div class="container">
+    <!-- Navigation Bar  -->
+
+    <!-- In order to build our nav bar, use lists. <ul> is basically the container of the list and <li> is a single element in the list.
 
 			  To insert a link in the nav bar, simply put an anchor tag <a> inside a <li>. 
 
@@ -23,75 +24,107 @@
 
 			  Finally, notice how our HTML is divided used <section> instead of <div>.-->
 
-      <section class="navigation">
-        <ul>
-          <li><a href="#five">More</a></li>
-          <li><a href="#four">Contact</a></li>
-          <li><a href="#three">Events</a></li>
-          <li><a href="#two">Guests</a></li>
-          <li><a href="#one">Location</a></li>
-          <li><a href="#home">Home</a></li>
-        </ul>
-      </section>
+    <section class="navigation">
+      <ul>
+        <li><a href="#five">More</a></li>
+        <li><a href="#four">Contact</a></li>
+        <li><a href="#three">Events</a></li>
+        <li><a href="#two">Guests</a></li>
+        <li><a href="#one">Location</a></li>
+        <li><a href="#home">Home</a></li>
+      </ul>
+    </section>
 
-      <!-- Hero Image  -->
-      <section class="home" id="home">
-		<div class="cover">
-			<h1 class="title">Minneapolis Anime and Gaming Event</h1>
-		</div>
-			
-        <div class="containerHome">
-          <div class="bannerHome">Buy Tickets Now!</div>
-          <h2 class="header1Home">What is M.A.G.E?</h2>
-          <p class="textHome">
-            M.A.G.E. (formerly known as MetaCon) is an anime and gaming
-            experience happening in Minneapolis, MN. M.A.G.E. will be an all new
-            experience, blending together Anime, Gaming, SciFi, TV, and adding a
-            little bit of Renaissance and Steampunk inspiration. Come join us to
-            see your favorite Voice Actors from Anime to SciFi and everything in
-            between. Enjoy our Late night dances, our Main Stage Events and
-            extensive gaming departments covering everything from your favorites
-            on console and pc to full one shot DnD campaigns and more!
-          </p>
-		  <div class = image1Home></div>
-		  <h2 class="header2Home">Meet Our Upcoming Guests!</h2>
-        </div>
-      </section>
+    <!-- Hero Image  -->
+    <section class="home" id="home">
+      <div class="cover">
+        <h1 class="title">Minneapolis Anime and Gaming Event</h1>
+      </div>
 
-      <!-- First Section  -->
-      <section class="one" id="one">
-    
-        <h2 class="header1One">Location</h2>
-        <p class = text1One>
-          The Minneapolis Anime and Gaming Event is excited to come to the beautiful Hyatt Regency in downtown Minneapolis. With over 644 guestrooms and 130,000+ square feet of space for the convention, it is the perfect place to hold an epic convention. Here are some highlights:
-
-Convention events last until 2am or later! Enjoy events all night long by staying with us!
-Hotel rooms are only $132/night, making staying at the convention hotel convenient and cheap (rooms downtown are normally $250 a night!). Having a room means you can be part of the action early, and stay up late!
-Our ConSweet, which includes free ramen, rice, and soda. Attendees have access to free ramen and soda as part of your admission.
-Our main events room is huge, perfect for an epic rave dance and tons of epic events.
-All hotel guests even get free wifi!
+      <div class="containerHome">
+        <div class="bannerHome">Buy Tickets Now!</div>
+        <h2 class="header1Home">What is M.A.G.E?</h2>
+        <p class="textHome">
+          M.A.G.E. (formerly known as MetaCon) is an anime and gaming
+          experience happening in Minneapolis, MN. M.A.G.E. will be an all new
+          experience, blending together Anime, Gaming, SciFi, TV, and adding a
+          little bit of Renaissance and Steampunk inspiration. Come join us to
+          see your favorite Voice Actors from Anime to SciFi and everything in
+          between. Enjoy our Late night dances, our Main Stage Events and
+          extensive gaming departments covering everything from your favorites
+          on console and pc to full one shot DnD campaigns and more!
         </p>
-      </section>
+        <div class=image1Home></div>
+        <h2 class="header2Home">Meet Our Upcoming Guests!</h2>
+        <div id="guests">
+          <a>
+            <img src="./images/astros.png" width="100px" height="100px">
+            <div class="caption">Astros-Here</div>
+          </a>
+          <a>
+            <img src="./images/greg.png" width="100px" height="100px">
+            <div class="caption">Greg Ayres</div>
+          </a>
+          <a>
+            <img src="./images/kai.png" width="100px" height="100px">
+            <div class="caption">Kai Ava hauser</div>
+          </a>
+          <a>
+            <img src="./images/marcus.png" width="100px" height="100px">
+            <div class="caption">Marcus M. Mauldin </div>
+          </a>
+          <a>
+            <img src="./images/oscar.png" width="100px" height="100px">
+            <div class="caption">Oscar Seung</div>
+          </a>
+          <a>
+            <img src="./images/sin.png" width="100px" height="100px">
+            <div class="caption">Sin-Thetic Cosplay</div>
+          </a>
+        </div>
 
-      <!-- Second Section  -->
-      <section class="two" id="two">
-        <h2>Guests</h2>
-      </section>
+      </div>
+    </section>
 
-      <!-- Third Section  -->
-      <section class="three" id="three">
-        <h2>Events</h2>
-      </section>
+    <!-- First Section  -->
+    <section class="one" id="one">
 
-      <!-- Fourth Section  -->
-      <section class="four" id="four">
-        <h2>Contact</h2>
-      </section>
+      <h2 class="header1One">Location</h2>
+      <p class=text1One>
+        The Minneapolis Anime and Gaming Event is excited to come to the beautiful Hyatt Regency in downtown
+        Minneapolis. With over 644 guestrooms and 130,000+ square feet of space for the convention, it is the perfect
+        place to hold an epic convention. Here are some highlights:
 
-      <section class="five" id="five"></section>
+        Convention events last until 2am or later! Enjoy events all night long by staying with us!
+        Hotel rooms are only $132/night, making staying at the convention hotel convenient and cheap (rooms downtown are
+        normally $250 a night!). Having a room means you can be part of the action early, and stay up late!
+        Our ConSweet, which includes free ramen, rice, and soda. Attendees have access to free ramen and soda as part of
+        your admission.
+        Our main events room is huge, perfect for an epic rave dance and tons of epic events.
+        All hotel guests even get free wifi!
+      </p>
+    </section>
 
-      <!-- Fifth Section  -->
-      <section class="footer" id="five"></section>
-    </div>
-  </body>
+    <!-- Second Section  -->
+    <section class="two" id="two">
+      <h2>Guests</h2>
+    </section>
+
+    <!-- Third Section  -->
+    <section class="three" id="three">
+      <h2>Events</h2>
+    </section>
+
+    <!-- Fourth Section  -->
+    <section class="four" id="four">
+      <h2>Contact</h2>
+    </section>
+
+    <section class="five" id="five"></section>
+
+    <!-- Fifth Section  -->
+    <section class="footer" id="five"></section>
+  </div>
+</body>
+
 </html>
