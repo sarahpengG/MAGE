@@ -104,7 +104,7 @@ li:last-child {
   /* this is the hero image area */
   width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
   height: 260vh; /* same idea but for the vertical height of the web browser */
-  background: rgba(76, 27, 156, 0.548);
+  background: rgba(45, 9, 104, 0.548);
 }
 .cover {
 
@@ -139,12 +139,12 @@ li:last-child {
 }
 .image1Home {
   position: relative;
-  top: -45vh;
+  top: -62vh;
   width: 310px;
   height: 320px;
-  left: -1%;
+  left: 5%;
  
-  transform: translate(50%, 30%);
+  transform: translate(50%, 50%);
   background: url("../images/image1.jpg");
   background-size: cover;
 }
@@ -182,14 +182,26 @@ li:last-child {
 
 .one {
   width: 1000px;
-  height: 150vh;
+  height: 180vh;
   background: rgba(199, 123, 214, 0.548);
   text-align: center; 
   padding: 20px;
   margin: auto; /* makes sure that the section is centered on the page */
 }
 
-.header1One, .header2One {
+.header1One {
+  margin: 10px;
+  text-align: center; /* Center the headers */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display: block; 
+  position: relative;
+  color: rgb(29, 10, 72);
+  
+}
+.header2One {
+  margin: 20px;
   text-align: center; /* Center the headers */
   font-size: 24px;
   font-weight: bold;
@@ -207,19 +219,23 @@ li:last-child {
   color: #000000; 
   display: block; 
   margin-top: 10px;
-  
+  margin-bottom: 30px;
 }
 .image1One{
-  top: -15vh;
+ 
   width: 284px;
   height: 340px;
-  position: relative;
-  transform: translate(50%, 50%);
+  position: relatiave;
+  display:block;
+  
+  margin:auto;
+  
   background: url("../images/map.png");
   background-size: cover;
 }
 
 .text2One {
+  
   text-align: left; /* Left-align the paragraph text */
   max-width: 800px; /* Optional: limit width for readability */
   line-height: 1.6;
