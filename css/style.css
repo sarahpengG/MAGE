@@ -196,7 +196,7 @@ li:last-child {
   margin-bottom: 50px;
   display: block; 
   position: relative;
-  color: #000000;
+  color: rgb(29, 10, 72);
 }
 .text1One {
   text-align: left; /* Left-align the paragraph text */
