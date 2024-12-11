@@ -182,7 +182,7 @@ li:last-child {
 
 .one {
   width: 1000px;
-  height: 100vh;
+  height: 150vh;
   background: rgba(199, 123, 214, 0.548);
   text-align: center; 
   padding: 20px;
@@ -208,6 +208,15 @@ li:last-child {
   display: block; 
   margin-top: 10px;
   
+}
+.image1One{
+  top: -15vh;
+  width: 284px;
+  height: 340px;
+  position: relative;
+  transform: translate(50%, 50%);
+  background: url("../images/map.png");
+  background-size: cover;
 }
 
 .text2One {
