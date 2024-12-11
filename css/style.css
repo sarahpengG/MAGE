@@ -103,8 +103,8 @@ li:last-child {
 .home {
   /* this is the hero image area */
   width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
-  height: 250vh; /* same idea but for the vertical height of the web browser */
-  background: rgba(95, 40, 147, 0.548);
+  height: 260vh; /* same idea but for the vertical height of the web browser */
+  background: rgba(76, 27, 156, 0.548);
 }
 .cover {
 
@@ -129,44 +129,46 @@ li:last-child {
   font-size: 40px;
 }
 .header1Home {
-  position: absolute;
-  top: 650px;
+  position: relative;
+  top: 20vh;
+  text-align: left;
   text-align: left;
   width: 400px;
-  left: 800px;
+  left: 33.5%;
   margin: auto;
 }
 .image1Home {
+  position: relative;
+  top: -45vh;
   width: 310px;
   height: 320px;
-  left: 50%;
-  top: 50%;
+  left: -1%;
+ 
   transform: translate(50%, 30%);
   background: url("../images/image1.jpg");
   background-size: cover;
 }
 
 .textHome {
-  
-  position: absolute;
-  top: 700px;
+  position: relative;
+  top: 30vh;
   text-align: left;
   width: 450px;
-  left: 600px;
+  left: 20%;
   margin: auto;
   letter-spacing: 0.1px;
-  line-height: 24px;
+  line-height: 1.6; 
+  font-size: 16px;
 }
 
 .header2Home {
   position: absolute;
-  top: 1050px;
+  top: 200vh;
 }
-
 
 #guests{
   position: relative;
-  top: 300px;
+  top: 50px;
   text-align:center;
   margin:10px auto; 
   font-family:"FiraSansLight";
@@ -179,37 +181,43 @@ li:last-child {
 }
 
 .one {
-  width: 1000px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+  width: 1000px;
   height: 100vh;
-  background: rgba(202, 150, 38, 0.548);
+  background: rgba(199, 123, 214, 0.548);
+  text-align: center; 
+  padding: 20px;
   margin: auto; /* makes sure that the section is centered on the page */
 }
 
-.two {
-  width: 1000px;
-  height: 100vh;
-  background: green;
-  margin: auto;
+.header1One, .header2One {
+  text-align: center; /* Center the headers */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display: block; 
+  position: relative;
+  color: #000000;
+}
+.text1One {
+  text-align: left; /* Left-align the paragraph text */
+  max-width: 800px; /* Optional: limit width for readability */
+  margin: 0 auto; /* Center the paragraph inside the section */
+  line-height: 1.6; 
+  font-size: 16px;
+  color: #000000; 
+  display: block; 
+  margin-top: 10px;
+  
 }
 
-.three {
-  width: 1000px;
-  height: 600px;
-  background: orange;
-  margin: auto;
-}
-
-.four {
-  width: 1000px;
-  height: 300px;
-  background: violet;
-  margin: auto;
-}
-.five {
-  width: 1000px;
-  height: 300px;
-  background: violet;
-  margin: auto;
+.text2One {
+  text-align: left; /* Left-align the paragraph text */
+  max-width: 800px; /* Optional: limit width for readability */
+  line-height: 1.6;
+  margin: 20px auto 0 auto; /* Center the paragraph and add spacing above */
+  font-size: 16px;
+  color: #000000; /* Optional: text color */
+  display: block; 
 }
 
 .footer {
@@ -217,3 +225,4 @@ li:last-child {
   height: 100px;
   background: black;
 }
+
