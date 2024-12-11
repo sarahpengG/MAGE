@@ -199,9 +199,9 @@ li:last-child {
   color: rgb(29, 10, 72);
 }
 .text1One {
-  text-align: left; /* Left-align the paragraph text */
-  max-width: 800px; /* Optional: limit width for readability */
-  margin: 0 auto; /* Center the paragraph inside the section */
+  text-align: left; 
+  max-width: 800px; 
+  margin: 0 auto; 
   line-height: 1.6; 
   font-size: 16px;
   color: #000000; 
