@@ -100,31 +100,15 @@ li:last-child {
 
 /* Home Page CSS */
 .title {
-  font-family: "FiraSansMed";
+  font-family: FiraSansLrg;
   font-size: 4em;
-  color: white;
-  position: absolute;
-  
-  transform: translate( -50%); 
-  animation: wave 2s ease-in-out infinite; /* Apply the wave animation */
-  
-}
-
-.title span {
-  display: inline-block;
+  margin-top: 40vh;
   animation: wave 2s ease-in-out infinite;
-}
-
-.title span:nth-child(odd) {
-  animation-delay: 0.1s;
-}
-
-.title span:nth-child(even) {
-  animation-delay: 0.2s;
 }
 
 .home {
   /* this is the hero image area */
+
   width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
   height: 260vh; /* same idea but for the vertical height of the web browser */
   background: rgba(45, 9, 104, 0.548);
@@ -146,10 +130,13 @@ li:last-child {
   width: 100vw;
   height: 45px;
   background: rgb(204, 0, 255);
-  position: absolute;
-  top: 430px;
+  position: relative;
+  top: -25vh;
   text-align: center;
   font-size: 40px;
+}
+.bannertext{
+  animation: wave 2s ease-in-out infinite;
 }
 .header1Home {
   position: relative;
@@ -162,7 +149,7 @@ li:last-child {
 }
 .image1Home {
   position: relative;
-  top: -62vh;
+  top: 10vh;
   width: 310px;
   height: 320px;
   left: 5%;
@@ -270,21 +257,23 @@ li:last-child {
   height: 100px;
   background: black;
 }
-
+.wave {
+  animation-name: wavy;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
 @keyframes wave {
   0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-15px);
+    top: 0px;
   }
   50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(15px);
+    top: -15px;
   }
   100% {
-    transform: translateY(0);
+    top: 0px;
   }
 }
