@@ -10,20 +10,20 @@ section {
 /* Typography */
 @font-face {
   font-family: "FiraSansLight";
-  src: url("../fonts/FiraSans-Light.ttf") ;
+  src: url("../fonts/FiraSans-Light.ttf");
 }
 @font-face {
   font-family: "FiraSansMed";
-  src: url("../fonts/FiraSans-Medium.ttf") ;
+  src: url("../fonts/FiraSans-Medium.ttf");
 }
 @font-face {
   font-family: "FiraSansReg";
-  src: url("../fonts/FiraSans-Regular.ttf") ;
+  src: url("../fonts/FiraSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "FiraSansLrg";
-  src: url("../fonts/FiraSans-SemiBold.ttf") ;
+  src: url("../fonts/FiraSans-SemiBold.ttf");
 }
 /* For Headers/Titles */
 h1 {
@@ -39,7 +39,7 @@ h1 {
 
 /* For Subheaders */
 h2 {
-  font-family:"FiraSansMed";
+  font-family: "FiraSansMed";
   font-size: 2em;
   color: white;
   position: absolute;
@@ -52,7 +52,7 @@ h2 {
 
 /* For Captions */
 h4 {
-  font-family:"FiraSansReg";
+  font-family: "FiraSansReg";
   font-size: 1em;
   color: white;
   position: absolute;
@@ -60,8 +60,8 @@ h4 {
   transform: translateX(-50%);
   bottom: 40px;
 }
-p{
-  font-family:"FiraSansReg";
+p {
+  font-family: "FiraSansReg";
 }
 
 /* Navigation Bar */
@@ -74,7 +74,7 @@ p{
 }
 
 ul {
-  font-family:"FiraSansReg";
+  font-family: "FiraSansReg";
   list-style: none; /* this removes bullet points on our "list" */
   margin-top: 10px;
   margin-left: 20px;
@@ -99,15 +99,38 @@ li:last-child {
 }
 
 /* Home Page CSS */
+.title {
+  font-family: "FiraSansMed";
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  
+  transform: translate( -50%); 
+  animation: wave 2s ease-in-out infinite; /* Apply the wave animation */
+  
+}
+
+.title span {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.title span:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.title span:nth-child(even) {
+  animation-delay: 0.2s;
+}
 
 .home {
   /* this is the hero image area */
   width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
   height: 260vh; /* same idea but for the vertical height of the web browser */
   background: rgba(45, 9, 104, 0.548);
+  position: relative;
 }
 .cover {
-
   width: 100vw;
   height: 100vh;
   background: url("../images/MAGE.jpg");
@@ -119,7 +142,7 @@ li:last-child {
   text-align: left;
 }
 .bannerHome {
-  font-family:"FiraSansReg";
+  font-family: "FiraSansReg";
   width: 100vw;
   height: 45px;
   background: rgb(204, 0, 255);
@@ -143,7 +166,7 @@ li:last-child {
   width: 310px;
   height: 320px;
   left: 5%;
- 
+
   transform: translate(50%, 50%);
   background: url("../images/image1.jpg");
   background-size: cover;
@@ -157,7 +180,7 @@ li:last-child {
   left: 20%;
   margin: auto;
   letter-spacing: 0.1px;
-  line-height: 1.6; 
+  line-height: 1.6;
   font-size: 16px;
 }
 
@@ -166,25 +189,25 @@ li:last-child {
   top: 200vh;
 }
 
-#guests{
+#guests {
   position: relative;
   top: 50px;
-  text-align:center;
-  margin:10px auto; 
-  font-family:"FiraSansLight";
+  text-align: center;
+  margin: 10px auto;
+  font-family: "FiraSansLight";
 }
-#guests a{
-  margin:0px 20px;
-  display:inline-block;
-  text-decoration:none;
-  color:rgb(255, 255, 255);
+#guests a {
+  margin: 0px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .one {
   width: 1000px;
   height: 180vh;
   background: rgba(199, 123, 214, 0.548);
-  text-align: center; 
+  text-align: center;
   padding: 20px;
   margin: auto; /* makes sure that the section is centered on the page */
 }
@@ -195,10 +218,9 @@ li:last-child {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 50px;
-  display: block; 
+  display: block;
   position: relative;
   color: rgb(29, 10, 72);
-  
 }
 .header2One {
   margin: 20px;
@@ -206,43 +228,41 @@ li:last-child {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 50px;
-  display: block; 
+  display: block;
   position: relative;
   color: rgb(29, 10, 72);
 }
 .text1One {
-  text-align: left; 
-  max-width: 800px; 
-  margin: 0 auto; 
-  line-height: 1.6; 
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
   font-size: 16px;
-  color: #000000; 
-  display: block; 
+  color: #000000;
+  display: block;
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.image1One{
- 
+.image1One {
   width: 284px;
   height: 340px;
   position: relatiave;
-  display:block;
-  
-  margin:auto;
-  
+  display: block;
+
+  margin: auto;
+
   background: url("../images/map.png");
   background-size: cover;
 }
 
 .text2One {
-  
   text-align: left; /* Left-align the paragraph text */
   max-width: 800px; /* Optional: limit width for readability */
   line-height: 1.6;
   margin: 20px auto 0 auto; /* Center the paragraph and add spacing above */
   font-size: 16px;
   color: #000000; /* Optional: text color */
-  display: block; 
+  display: block;
 }
 
 .footer {
@@ -251,3 +271,20 @@ li:last-child {
   background: black;
 }
 
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
