@@ -128,37 +128,37 @@ li:last-child {
 .bannerHome {
   font-family: "FiraSansReg";
   width: 100vw;
-  height: 45px;
+  height: 55px;
   background: rgb(204, 0, 255);
   position: relative;
   top: -25vh;
   text-align: center;
   font-size: 40px;
 }
-.bannertext{
+.bannertext {
+  position: relative;
   animation: wave 2s ease-in-out infinite;
+}
+
+
+.image1Home {
+  position: relative;
+  margin-top: -62vh;
+  width: 310px;
+  height: 320px;
+  left: 5%;
+  transform: translate(50%, 50%);
+  background: url("../images/image1.jpg");
+  background-size: cover;
 }
 .header1Home {
   position: relative;
   top: 20vh;
   text-align: left;
-  text-align: left;
   width: 400px;
   left: 33.5%;
   margin: auto;
 }
-.image1Home {
-  position: relative;
-  top: 10vh;
-  width: 310px;
-  height: 320px;
-  left: 5%;
-
-  transform: translate(50%, 50%);
-  background: url("../images/image1.jpg");
-  background-size: cover;
-}
-
 .textHome {
   position: relative;
   top: 30vh;
@@ -177,9 +177,12 @@ li:last-child {
 }
 
 #guests {
-  position: relative;
-  top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 210vh;
   text-align: center;
+  white-space: nowrap;
   margin: 10px auto;
   font-family: "FiraSansLight";
 }
@@ -271,7 +274,7 @@ li:last-child {
     top: 0px;
   }
   50% {
-    top: -15px;
+    top: 15px;
   }
   100% {
     top: 0px;
